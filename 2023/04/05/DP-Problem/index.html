@@ -11,7 +11,7 @@
   <meta name="description" content="数位dp 记忆化搜索记忆化搜索本质是动态规划+回溯，只不过在回溯的过程中记忆已经计算过的状态，这样就不用再次计算了关键点：回溯状态的定义 数位dpf(int i,int mask,boolean isNum,boolean isLimit)isNum 第i位前面是否有填过数字，isLimit表示构造是否受到限制其中（i，mask）表示记忆化的状态关键点：记忆状态的定定义 区间dp最长回文子序列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DP Problem">
-<meta property="og:url" content="http://example.com/2023/04/05/DP-Problem/index.html">
+<meta property="og:url" content="https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/index.html">
 <meta property="og:site_name" content="山岚的Blog">
 <meta property="og:description" content="数位dp 记忆化搜索记忆化搜索本质是动态规划+回溯，只不过在回溯的过程中记忆已经计算过的状态，这样就不用再次计算了关键点：回溯状态的定义 数位dpf(int i,int mask,boolean isNum,boolean isLimit)isNum 第i位前面是否有填过数字，isLimit表示构造是否受到限制其中（i，mask）表示记忆化的状态关键点：记忆状态的定定义 区间dp最长回文子序列">
 <meta property="og:locale" content="en_US">
@@ -25,10 +25,10 @@
   
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/personal-blog/css/style.css">
 
   
-<script src="/js/pace.min.js"></script>
+<script src="/personal-blog/js/pace.min.js"></script>
 
   
 
@@ -44,22 +44,22 @@
     <div id="header-outer">
         <div id="header-menu" class="header-menu-pos animated">
             <div class="header-menu-container">
-                <a href="/" class="left">
+                <a href="/personal-blog/" class="left">
                     <span class="site-title">ShanLan&#39;s Blog</span>
                 </a>
                 <nav id="header-menu-nav" class="right">
                     
-                    <a  href="/">
+                    <a  href="/personal-blog/">
                         <i class="fa fa-home"></i>
                         <span>Home</span>
                     </a>
                     
-                    <a  href="/archives">
+                    <a  href="/personal-blog/archives">
                         <i class="fa fa-archive"></i>
                         <span>Archives</span>
                     </a>
                     
-                    <a  href="/about">
+                    <a  href="/personal-blog/about">
                         <i class="fa fa-user"></i>
                         <span>About</span>
                     </a>
@@ -72,8 +72,8 @@
         </div>
         <div id="header-row">
             <div id="logo">
-                <a href="/">
-                    <img src="/images/logo.png" alt="logo">
+                <a href="/personal-blog/">
+                    <img src="/personal-blog/images/logo.png" alt="logo">
                 </a>
             </div>
             <div class="header-info">
@@ -122,7 +122,7 @@
               <li>
                   <i class="fa fa-book"></i>
                   
-                      <a href="/categories/DP/">DP</a>
+                      <a href="/personal-blog/categories/DP/">DP</a>
                   
               </li>
           
@@ -149,10 +149,10 @@
             <div class="post-copyright">
     <div class="content">
         <p>最后更新： 2023年04月06日 19:29</p>
-        <p>原始链接： <a class="post-url" href="/2023/04/05/DP-Problem/" title="DP Problem">http://example.com/2023/04/05/DP-Problem/</a></p>
+        <p>原始链接： <a class="post-url" href="/personal-blog/2023/04/05/DP-Problem/" title="DP Problem">https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/</a></p>
         <footer>
-            <a href="http://example.com">
-                <img src="/images/logo.png" alt="孙伟祥">
+            <a href="https://shanlanx.github.io/personal-blog">
+                <img src="/personal-blog/images/logo.png" alt="孙伟祥">
                 孙伟祥
             </a>
         </footer>
@@ -175,7 +175,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/04/05/DP-Problem/&title=《DP Problem》 — 山岚的Blog&pic=http://example.comimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/&title=《DP Problem》 — 山岚的Blog&pic=https://shanlanx.github.io/personal-blogimages/logo.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -185,22 +185,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/04/05/DP-Problem/&title=《DP Problem》 — 山岚的Blog&source=WEB开发的笔记" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/&title=《DP Problem》 — 山岚的Blog&source=WEB开发的笔记" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2023/04/05/DP-Problem/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《DP Problem》 — 山岚的Blog&url=http://example.com/2023/04/05/DP-Problem/&via=http://example.com" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《DP Problem》 — 山岚的Blog&url=https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/&via=https://shanlanx.github.io/personal-blog" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://example.com/2023/04/05/DP-Problem/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -210,7 +210,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://example.com/2023/04/05/DP-Problem/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://shanlanx.github.io/personal-blog/2023/04/05/DP-Problem/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -265,7 +265,7 @@
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script>
   var mihoConfig = {
-      root: "http://example.com",
+      root: "https://shanlanx.github.io/personal-blog",
       animate: true,
       isHome: false,
       share: true,
@@ -289,7 +289,7 @@
 <div class="sidebar-menu-box" id="sidebar-menu-box">
     <div class="sidebar-menu-box-container">
         <div id="sidebar-menu-box-categories">
-            <a class="category-link" href="/categories/DP/">DP</a>
+            <a class="category-link" href="/personal-blog/categories/DP/">DP</a>
         </div>
         <div id="sidebar-menu-box-tags">
             
@@ -303,19 +303,19 @@
         <ul class="mobile-header-menu-navbar">
             
             <li>
-                <a  href="/">
+                <a  href="/personal-blog/">
                     <i class="fa fa-home"></i><span>Home</span>
                 </a>
             </li>
             
             <li>
-                <a  href="/archives">
+                <a  href="/personal-blog/archives">
                     <i class="fa fa-archive"></i><span>Archives</span>
                 </a>
             </li>
             
             <li>
-                <a  href="/about">
+                <a  href="/personal-blog/about">
                     <i class="fa fa-user"></i><span>About</span>
                 </a>
             </li>
@@ -352,17 +352,17 @@
     </li>
 </div>
 
-<script src="/js/search.js"></script>
+<script src="/personal-blog/js/search.js"></script>
 
 
-<script src="/js/main.js"></script>
+<script src="/personal-blog/js/main.js"></script>
 
 
 
   <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
   <div id="particles"></div>
   
-<script src="/js/particles.js"></script>
+<script src="/personal-blog/js/particles.js"></script>
 
 
 
@@ -376,12 +376,12 @@
 
   <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
   
-<script src="/js/animate.js"></script>
+<script src="/personal-blog/js/animate.js"></script>
 
 
 
   
-<script src="/js/pop-img.js"></script>
+<script src="/personal-blog/js/pop-img.js"></script>
 
   <script>
      $(".article-entry p img").popImg();
