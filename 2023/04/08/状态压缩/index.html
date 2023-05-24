@@ -8,15 +8,15 @@
   
     <meta name="keywords" content="山岚" />
   
-  <meta name="description" content="状态压缩 几种常见的集合处理 A\,\cup&amp;#123;B&amp;#125;&#x3D;a|b  \\ A\,\cap B&#x3D;a\&amp;b \\ A-B&#x3D;a|&amp;#123;~&amp;#125;b \\ (S&gt;&gt;x)\&amp;1 判断是x是否在集合中  \[L_p  &#x3D; (\sum_{i&#x3D;1}^m |x_i - y_i |^{p}  )^{ {\tfrac{1} {p} } }\] ## 基">
+  <meta name="description" content="状态压缩 几种常见的集合处理 A\,\cup&amp;#123;B&amp;#125;&#x3D;a|b  \\ A\,\cap B&#x3D;a\&amp;b \\ A-B&#x3D;a|&amp;#123;~&amp;#125;b \\ (S&gt;&gt;x)\&amp;1 判断是x是否在集合中  基本思考方法 首先将原本的集合进行编码，随后用一个int或者long来保存一个状态。对于状态的操作参考上方集合到位运算的转换 ## 注意">
 <meta property="og:type" content="article">
 <meta property="og:title" content="状态压缩">
 <meta property="og:url" content="https://shanlanx.github.io/personal-blog/2023/04/08/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/index.html">
 <meta property="og:site_name" content="山岚的Blog">
-<meta property="og:description" content="状态压缩 几种常见的集合处理 A\,\cup&amp;#123;B&amp;#125;&#x3D;a|b  \\ A\,\cap B&#x3D;a\&amp;b \\ A-B&#x3D;a|&amp;#123;~&amp;#125;b \\ (S&gt;&gt;x)\&amp;1 判断是x是否在集合中  \[L_p  &#x3D; (\sum_{i&#x3D;1}^m |x_i - y_i |^{p}  )^{ {\tfrac{1} {p} } }\] ## 基">
+<meta property="og:description" content="状态压缩 几种常见的集合处理 A\,\cup&amp;#123;B&amp;#125;&#x3D;a|b  \\ A\,\cap B&#x3D;a\&amp;b \\ A-B&#x3D;a|&amp;#123;~&amp;#125;b \\ (S&gt;&gt;x)\&amp;1 判断是x是否在集合中  基本思考方法 首先将原本的集合进行编码，随后用一个int或者long来保存一个状态。对于状态的操作参考上方集合到位运算的转换 ## 注意">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-04-08T08:41:25.000Z">
-<meta property="article:modified_time" content="2023-04-08T09:26:28.536Z">
+<meta property="article:modified_time" content="2023-04-20T06:21:36.587Z">
 <meta property="article:author" content="孙伟祥">
 <meta property="article:tag" content="DP">
 <meta name="twitter:card" content="summary">
@@ -144,14 +144,13 @@
 \\ A-B=a|&#123;~&#125;b
 \\ (S&gt;&gt;x)\&amp;1 判断是x是否在集合中
 </code></pre>
-<p><span class="math display">\[L_p  = (\sum_{i=1}^m |x_i - y_i
-|^{p}  )^{ {\tfrac{1} {p} } }\]</span> ## 基本思考方法
-首先将原本的集合进行编码，随后用一个int或者long来保存一个状态。对于状态的操作参考上方集合到位运算的转换
+<h2 id="基本思考方法">基本思考方法</h2>
+<p>首先将原本的集合进行编码，随后用一个int或者long来保存一个状态。对于状态的操作参考上方集合到位运算的转换
 ## 注意 状态个数决定用int还是long int最多32位 long可以存64位</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2023年04月08日 17:26</p>
+        <p>最后更新： 2023年04月20日 14:21</p>
         <p>原始链接： <a class="post-url" href="/personal-blog/2023/04/08/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/" title="状态压缩">https://shanlanx.github.io/personal-blog/2023/04/08/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/</a></p>
         <footer>
             <a href="https://shanlanx.github.io/personal-blog">
@@ -238,12 +237,22 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9"><span class="post-toc-text">状态压缩</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E9%9B%86%E5%90%88%E5%A4%84%E7%90%86"><span class="post-toc-text">几种常见的集合处理</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9"><span class="post-toc-text">状态压缩</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E9%9B%86%E5%90%88%E5%A4%84%E7%90%86"><span class="post-toc-text">几种常见的集合处理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%80%83%E6%96%B9%E6%B3%95"><span class="post-toc-text">基本思考方法</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
+  
+    <a href="/personal-blog/2023/05/24/ApiProject/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          ApiProject
+        
+      </span>
+    </a>
   
   
     <a href="/personal-blog/2023/04/05/DP-Problem/" id="article-nav-older" class="article-nav-link-wrap">
@@ -312,7 +321,7 @@
             
         </div>
         <div id="sidebar-menu-box-tags">
-            <a href="/personal-blog/tags/DP/" style="font-size: 10px;">DP</a>
+            <a href="/personal-blog/tags/DP/" style="font-size: 20px;">DP</a> <a href="/personal-blog/tags/Project/" style="font-size: 10px;">Project</a>
         </div>
     </div>
     <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
@@ -345,7 +354,7 @@
     <div class="mobile-header-tag-container">
         <span class="title">Tags</span>
         <div id="mobile-header-container-tags">
-            <a href="/personal-blog/tags/DP/" style="font-size: 10px;">DP</a>
+            <a href="/personal-blog/tags/DP/" style="font-size: 20px;">DP</a> <a href="/personal-blog/tags/Project/" style="font-size: 10px;">Project</a>
         </div>
     </div>
 </div>
